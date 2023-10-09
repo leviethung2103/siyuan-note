@@ -69,8 +69,10 @@ If curernt user is root, change the user id when runnning the docker container. 
 id -u
 ```
 
+Here is the new command
+```bash
 docker run -d --restart always -v /home/hunglv/Downloads/siyuan/workspace:/siyuan/workspace -p 3001:6806 -u 0:1000 b3log/siyuan --workspace=/siyuan/workspace/ --accessAuthCode=xxx
-
+```
 
 
 
