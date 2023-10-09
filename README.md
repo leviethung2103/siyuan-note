@@ -64,3 +64,13 @@ mkdir -p ~/Downloads/siyuan/workspace
 docker run -d --restart always -v /home/hunglv/Downloads/siyuan/workspace:/siyuan/workspace -p 3001:6806 -u 1000:1000 b3log/siyuan --workspace=/siyuan/workspace/ --accessAuthCode=xxx
 ```
 
+If curernt user is root, change the user id when runnning the docker container. Check the user id
+```bash
+id -u
+```
+
+docker run -d --restart always -v /home/hunglv/Downloads/siyuan/workspace:/siyuan/workspace -p 3001:6806 -u 0:1000 b3log/siyuan --workspace=/siyuan/workspace/ --accessAuthCode=xxx
+
+
+
+
